@@ -1,0 +1,396 @@
+@import "variables"; 
+@import "index";
+@import "productos";
+@import "preguntas";
+@import "marca";
+@import "login";
+@import "contacto";
+@import "carrito";       
+   
+   /*Configuraciones generales
+    .nav-link:active {
+        color: white;
+        background-color: blue;
+        border-color: blue;
+        font-style: oblique; 
+    }
+
+    .contacto__formulario--titulo .contacto__formas--titulo .contacto__formas--otras .datospersonales__registrate {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+        font-size: small; 
+    }
+    
+    .contacto__formas--otras .usuarioyclave__login .datospersonales__registrate {
+        color: darkgray;
+    }
+ 
+    .contacto__formulario--titulo .contacto__formas--titulo a:visited .btn.btn-primary .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child {
+      color: black;
+    }
+
+    .usuarioyclave__login--color .contacto__formulario--color .datospersonales__registrate--color {
+      background-color: rgb(223, 236, 255);
+  }
+
+  
+  .bg-lav .btn-primary .btn.btn-primary .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child {
+    background-color:#ebeae6;
+  }
+  
+  .contacto__formulario--titulo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contacto__formas--titulo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+}
+
+.contacto__formas--otras {
+    margin-bottom: 200px;
+}
+
+.usuarioyclave__login .datospersonales__registrate{
+    margin-bottom: 150px;
+}
+
+.usuarioyclave .datospersonales {
+  height: 250px;
+}
+
+.datospersonales {
+  padding-top: 40px;
+}
+
+a:active .btn.btn-primary:hover .btn.btn-primary:active .nav-link:active .btn.btn-outline-success:hover .btn.btn-outline-success:active .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover #boton-vaciar.btn-primary:active .btn:first-child:active {
+  color: white;
+}
+
+a:active #boton-vaciar.btn-primary:active .btn:first-child:active {
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.btn.btn-primary:hover .btn.btn-primary:active .nav-link:active .btn.btn-outline-success:hover .btn.btn-outline-success:active .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover #boton-vaciar.btn-primary:active .btn:first-child:active {
+  background-color: blue;
+  border-color: $bordecolorboton;
+}
+
+.btn.btn-primary:hover .btn.btn-outline-success:hover .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover {
+  font-weight: bold;   
+}
+
+.btn.btn-primary:active .nav-link:active .btn.btn-outline-success:active {
+  font-style: oblique;   
+}
+
+
+.btn-primary .btn.btn-primary .btn-outline-success .btn.btn-outline-success .btn:first-child {
+  border-color: black;
+}
+
+.login {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+#destacados {
+  text-align:center;
+}
+
+a:visited {
+  text-decoration: none;
+}
+*/
+
+.btn.btn-primary:hover {
+  color: white;
+  background-color: blue;
+  border-color: blue;
+  font-weight: bold;   
+}
+
+.btn.btn-outline-success:hover {
+  @extend .btn.btn-primary:hover;
+}
+
+.btn-outline-success:hover {
+  @extend .btn.btn-primary:hover;
+}
+
+.btn:first-child:hover {
+  @extend .btn.btn-primary:hover;
+}
+
+#boton-vaciar.btn-primary:hover {
+  @extend .btn.btn-primary:hover;
+}
+
+#boton-vaciar.btn-primary:active {
+  @extend .btn.btn-primary:hover;
+  font-style: oblique;
+}
+
+#boton-vaciar.btn-primary:active .btn:first-child:active {
+  @extend .btn.btn-primary:hover;
+  font-style: oblique;
+}
+
+.nav-link:active {
+  color: white;
+  background-color: blue;
+  border-color: blue;
+  font-style: oblique; 
+}
+
+a:active {
+  @extend .nav-link:active;
+  font-weight: bold;
+}
+
+.btn.btn-primary:active .btn.btn-outline-success:active {
+  @extend .nav-link:active;
+}
+
+.btn.btn-primary {
+  color: black;
+  background-color: #ebeae6;
+  border-color: black;
+}
+
+.btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child  {
+  @extend .btn.btn-primary;
+}
+
+
+a:visited {
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+
+.btn-primary {
+ background-color:#ebeae6;
+ border-color: black;
+}
+
+.bg-lav {
+  background-color:#ebeae6;
+}
+
+
+
+/*contacto.html versión Laptop*/
+
+@media screen and  (min-width: 769px)
+{
+.contenedor_contacto {
+    display: grid;
+    grid-template-columns: 750px 400px 200px;
+    grid-template-rows: 60px 480px 300px 50px;
+    grid-template-areas: 
+    "menu menu menu"
+    "formulario formulario formulario"
+    "tabla tabla tabla"
+    "footer footer footer";
+     }
+
+.navbar {
+    grid-area:menu;
+}
+
+.contactogummi .contactogummi_formas{
+    grid-area: formulario;
+}
+
+.contactogummi_formas {
+    position: absolute;
+    transform: translate(460px, -250px);
+}
+
+.contactogummi {
+  grid-area: formulario;
+  padding-top: 35px;
+}
+
+.contactogummi_formas {
+  grid-area: formulario;
+  position: absolute;
+  transform: translate(460px, -250px);
+}
+
+
+.row_contacto {
+    grid-area: tabla;
+    position: absolute;
+    transform: translate(-760px, 300px);
+ }
+
+ .container-fluid_contacto {
+    grid-area: tabla;
+    position: absolute;
+    transform: translate(250px, -250px);
+ }
+
+.footer {
+    grid-area: footer;
+}
+
+}
+
+/*contacto.html versión iPad*/
+
+@media screen and  (max-width: 768px)
+{
+.contenedor_contacto {
+    grid-template-columns: 120px 100px 200px;
+    grid-template-rows: 70px 100px 300px 30px;
+    grid-template-areas: 
+    "menu menu menu"
+    "formulario formulario formulario"
+    "tabla tabla tabla"
+    "footer footer footer";
+     }
+
+    .navbar {
+        grid-area:menu;
+    }
+    
+    .contactogummi {
+        grid-area: formulario;
+        padding-top: 20px;
+    }
+    
+    .contactogummi_formas {
+        grid-area: formulario;
+     }
+
+    .row1 .container-fluid_contacto .img-fluid .img-fluid2 {
+        grid-area: tabla;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+}
+
+/*contacto.html versión iPhone X*/
+@media screen and  (max-width: 480px)
+{
+.contenedor_contacto {
+    grid-template-areas: 
+    "menu"
+    "formulario"
+    "formulario"
+    "formulario"
+    "formulario"
+    "tabla"
+    "tabla"
+    "footer";
+     }
+
+     .navbar {
+        grid-area:menu;
+    }
+    
+    .contactogummi {
+        grid-area: formulario;
+         }
+    
+    .contactogummi_formas {
+        grid-area: formulario;
+        background-color: #ebeae6;
+        position: relative;
+        transform: translate(0px, 20px);
+    }
+    
+    .row1 {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(-20px, -140px);
+        
+     }
+    
+    .container-fluid_contacto {
+        grid-area: tabla;
+        transform: translate(10px, 20px);
+        position: absolute;
+        height: 50px;
+        width: 250px;
+     }
+    
+    .img-fluid {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(0px, 50px);
+        height: auto;
+        width: auto;
+    }
+    
+    .img-fluid2 {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(250px, -30px);
+        height: auto;
+        width: auto;
+        }
+    
+    .footer {
+        grid-area: footer;
+        position: absolute;
+        padding-top: 450px;
+    }
+
+}
+
+/*Menu marca.html*/
+.nav_marca {
+  grid-area: main;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+  grid-area: menu;
+  z-index: 1;
+  align-self:unset;
+  > li {
+        float:left;
+  }
+  li {
+        a {
+         background-color: white;
+         color: black;
+         text-decoration:none;
+         padding:10px 12px;
+         display: block;
+        }
+        a:hover {
+          background-color:#eecd60;
+        }
+        :hover > ul {
+          display:block;
+        }
+        ul {
+          display:none;
+          position:absolute;
+          min-width:140px;
+          li {
+              position:relative;
+              ul {
+                  right:-140px;
+                  top:0px;
+              }
+          }
+        }
+     }
+  }  
+
+  .navbar {
+      grid-area:menu;
+  }
+

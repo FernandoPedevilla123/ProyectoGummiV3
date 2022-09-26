@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!--aca va todo el contenido de la pagina que no se debe visualizar-->
+    <meta charset="UTF-8"> <!--indica que se puedan leer las ñ o tildes correctamente, caracteres especiales como el $-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--para que nuestro sitio se pueda ver correctamente en el Edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--sirve para que podamos visualizar nuestro sitio en un dispositivo-->
+    <title>Gummi</title> <!--titulo de nuestro sitio que se va a visualizar en el navegador-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-lav">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="assets/logo_gummi.JPG"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#destacados">Destacados</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pages/productos.html">Men</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="pages/productos.html">Kids</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="pages/productos.html">Women</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" >
+              <input class="form-control me-2" type="search" placeholder="Ingresar búsqueda" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <a href="pages/login.html"><img src="assets/login.JPG" alt="" title="login"></a>
+              <a href="pages/carrito.html"><img src="assets/carrito.JPG" alt="" title="carrito"></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <header>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/fallwinter.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/carteras.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/banner.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+
+    <main class="container-fluid">
+        <h1 class="text-center h3 mt-4 mb-4" id="destacados">MAS VENDIDOS</h1>
+        <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="assets/aquafucsia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ZAPATILLA FELI AQUA/FUCSIA</h5>
+              <p class="card-text">$17,300.00</p>
+              <a href="pages/carrito.html" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/aire.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ZAPATILLA AIRE ROSE/GOLD</h5>
+              <p class="card-text">$16,200.00</p>
+              <a href="pages/carrito.html" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/alexrosegold.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ZAPATILLA ALEX ROSE/GOLD</h5>
+              <p class="card-text">$18,600.00</p>
+              <a href="pages/carrito.html" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/unstop.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ZAPATILLA UNSTOP BLANCO</h5>
+              <p class="card-text">$15,500.00</p>
+              <a href="pages/carrito.html" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+    </main>
+
+    <section class="container-fluid mt-4 mb-5">
+        <div class="row">
+        <div class="alert alert-success col-lg-4 col-md-6" role="alert">
+            <h4 class="alert-heading">Ayuda!</h4>
+            <p><a href="pages/marca.html">Quienes Somos</a></p>
+            <p><a href="pages/preguntas.html">Preguntas frecuentes</a></p>
+            <p><a href="pages/contacto.html">Contacto</a></p>
+            <hr>
+            <p class="mb-0">Siempre que lo necesites, asegurate de usar nuestros calzados para mantener tu pisada ordenada y equilibrada. Visitanos en:</p>
+            <div class="footer text-center">
+            <a title="facebook" href="https://www.facebook.com/gummishoes"target="_blank"><img src="assets/facebook.JPG"></a>
+            <a title="instagram" href="https://www.instagram.com/gummibrand/?hl=es" target="_blank"><img src="assets/instagram.JPG"></a>
+           </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+               
+            <div class="container-fluid">
+                <h2 class="text-left h3 mt-4 mb-4">Suscribite al news</h2>
+                <div class="row">
+                <article class="col-md-6">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+        
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Suscribirme</button>
+                        </div>
+                      </form>
+                </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer text-center">  
+   <h5>gummi - iBA Shop - Powered by easycommerce</h5>
+   </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

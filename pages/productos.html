@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!--aca va todo el contenido de la pagina que no se debe visualizar-->
+    <meta charset="UTF-8"> <!--indica que se puedan leer las ñ o tildes correctamente, caracteres especiales como el $-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--para que nuestro sitio se pueda ver correctamente en el Edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--sirve para que podamos visualizar nuestro sitio en un dispositivo-->
+    <title>Gummi</title> <!--titulo de nuestro sitio que se va a visualizar en el navegador-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+  <div class="contenedor_productos">
+    <nav class="navbar navbar-expand-lg bg-lav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html" title="home"><img src="../assets/logo_gummi.JPG"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html#destacados">Destacados</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productos.html">Men</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="productos.html">Kids</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="productos.html">Women</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ingresar búsqueda" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <a href="login.html"><img src="../assets/login.JPG" alt="" title="login"></a>
+            <a href="carrito.html"><img src="../assets/carrito.JPG" alt="" title="carrito"></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+        
+  <header>
+
+    <h2 class="text-left h3 mt-4 mb-4">Men</h2>
+    <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Zapatillas</a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Ojotas</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            <img src="../assets/men_zapatillas1.JPG" alt="">
+            <img src="../assets/men_zapatillas2.JPG" alt="">
+            <img src="../assets/men_zapatillas3.JPG" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            <img src="../assets/men_ojotas1.JPG" alt="">
+            <img src="../assets/men_ojotas2.JPG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-left h3 mt-4 mb-4">Kids</h2>
+    <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Zapatillas</a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Ojotas</button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">Sandalias</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <div class="card card-body">
+            <img src="../assets/kids_zapatillas1.JPG" alt="">
+            <img src="../assets/kids_zapatillas2.JPG" alt="">
+            <img src="../assets/kids_zapatillas3.JPG" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample4">
+          <div class="card card-body">
+            <img src="../assets/kids_ojotas.JPG" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample5">
+          <div class="card card-body">
+            <img src="../assets/kids_sandalias1.JPG" alt="">
+            <img src="../assets/kids_sandalias2.JPG" alt="">
+            <img src="../assets/kids_sandalias3.JPG" alt="">
+          </div>
+        </div>
+    </div>
+
+    <h2 class="text-left h3 mt-4 mb-4">Women</h2>
+    <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false" aria-controls="multiCollapseExample6">Zapatillas</a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample7" aria-expanded="false" aria-controls="multiCollapseExample7">Flats</button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample8" aria-expanded="false" aria-controls="multiCollapseExample8">Carteras</button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9" aria-expanded="false" aria-controls="multiCollapseExample9">Tacos</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample6">
+          <div class="card card-body">
+            <img src="../assets/women_zapatillas1.JPG" alt="">
+            <img src="../assets/women_zapatillas2.JPG" alt="">
+            <img src="../assets/women_zapatillas3.JPG" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample7">
+          <div class="card card-body">
+            <img src="../assets/women_flats1.JPG" alt="">
+            <img src="../assets/women_flats2.JPG" alt="">
+            <img src="../assets/women_flats3.JPG" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample8">
+          <div class="card card-body">
+            <img src="../assets/women_carteras1.JPG" alt="">
+            <img src="../assets/women_carteras2.JPG" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample9">
+          <div class="card card-body">
+            <img src="../assets/women_tacos.JPG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="container-fluid mt-4 mb-5">
+    <div class="row">
+    <div class="alert alert-success col-lg-4 col-md-6" role="alert">
+        <h4 class="alert-heading">Ayuda!</h4>
+        <p><a href="marca.html">Quienes Somos</a></p>
+        <p><a href="preguntas.html">Preguntas frecuentes</a></p>
+        <p><a href="contacto.html">Contacto</a></p>
+        <hr>
+        <p class="mb-0">Siempre que lo necesites, asegurate de usar nuestros calzados para mantener tu pisada ordenada y equilibrada. Visita nuestras redes y suscribite a las novedades.</p>
+        <div class="footer text-center">
+        <a title="facebook" href="https://www.facebook.com/gummishoes"target="_blank"><img src="../assets/facebook.JPG"></a>
+        <a title="instagram" href="https://www.instagram.com/gummibrand/?hl=es" target="_blank"><img src="../assets/instagram.JPG"></a>
+       </div>
+      </div>
+          <div class="col-lg-4 col-md-6">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+               
+            <div class="container-fluid">
+                <h2 class="text-left h3 mt-4 mb-4">Suscribite al news</h2>
+                <div class="row">
+                <article class="col-md-6">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+        
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Suscribirme</button>
+                        </div>
+                      </form>
+                </article>
+            </div>
+          </div>
+       </div>
+      </div>
+    </section>
+
+  <footer class="footer text-center">  
+   <h5>gummi - iBA Shop - Powered by easycommerce</h5>
+   </footer>
+</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

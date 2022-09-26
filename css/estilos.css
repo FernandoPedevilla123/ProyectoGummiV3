@@ -1,0 +1,737 @@
+/*Configuraciones generales incluidas en #main.css*/
+
+.contacto__formulario--titulo {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.contacto__formas--titulo {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+}
+
+.contacto__formas--otras {
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: small; 
+    margin-bottom: 200px;
+}
+
+.login {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.usuarioyclave {
+    height: 250px;
+}
+
+.usuarioyclave__login {
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: small;
+    margin-bottom: 150px;
+}
+
+.usuarioyclave__login--color {
+    background-color: rgb(223, 236, 255);
+}
+
+.contacto__formulario--color {
+    background-color: rgb(223, 236, 255);
+}
+
+.datospersonales {
+    padding-top: 40px;
+    height: 250px;
+}
+
+.datospersonales__registrate {
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: small;
+    margin-bottom: 150px;
+}
+
+.datospersonales__registrate--color {
+    background-color: rgb(223, 236, 255);
+}
+
+#destacados {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+
+/*Estilos incluidos en main.css
+
+.bg-lav {
+    background-color:#ebeae6;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    background-color: white;
+    font-weight: bold;
+}
+
+a:active {
+    color: white;
+    background-color:blue;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.btn-primary {
+   background-color:#ebeae6;
+   border-color: black;
+}
+
+.btn.btn-primary {
+    color: black;
+    background-color: #ebeae6;
+    border-color: black;
+}
+
+.btn.btn-primary:hover {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-weight: bold;   
+}
+
+.btn.btn-primary:active {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-style: oblique;   
+}
+
+.nav-link:active {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-style: oblique; 
+}
+
+.btn-outline-success {
+    color: black;
+    background-color: #ebeae6;
+    border-color: black;  
+}
+
+.btn.btn-outline-success {
+    color: black;
+    background-color: #ebeae6;
+    border-color: black;
+}
+
+.btn.btn-outline-success:hover {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-weight: bold; 
+}
+
+.btn.btn-outline-success:active {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-style: oblique;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-weight: bold;  
+}
+
+.btn:first-child:hover {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-weight: bold;
+}
+
+#boton-vaciar.btn-primary {
+    color: black;
+    background-color:#ebeae6;
+    border-color: black;
+}
+
+#boton-vaciar.btn-primary:hover {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-weight: bold;
+}
+
+#boton-vaciar.btn-primary:active {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.btn:first-child:active {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.btn:first-child {
+    color: black;
+    background-color:#ebeae6;
+    border-color: black;
+}
+
+/*contacto.html versión Laptop*/
+
+@media screen and  (min-width: 769px)
+{
+.contenedor_contacto {
+    display: grid;
+    grid-template-columns: 750px 400px 200px;
+    grid-template-rows: 60px 480px 300px 50px;
+    grid-template-areas: 
+    "menu menu menu"
+    "formulario formulario formulario"
+    "tabla tabla tabla"
+    "footer footer footer";
+     }
+
+.navbar {
+    grid-area:menu;
+}
+
+.contactogummi {
+    grid-area: formulario;
+    padding-top: 35px;
+}
+
+.contactogummi_formas {
+    grid-area: formulario;
+    position: absolute;
+    transform: translate(460px, -250px);
+}
+
+.row_contacto {
+    grid-area: tabla;
+    position: absolute;
+    transform: translate(-760px, 300px);
+ }
+
+ .container-fluid_contacto {
+    grid-area: tabla;
+    position: absolute;
+    transform: translate(250px, -250px);
+ }
+
+.footer {
+    grid-area: footer;
+}
+
+}
+
+
+/*marca.html versión iPhone X*/
+@media screen and  (max-width: 480px)
+{
+.contenedor_marca {
+    grid-template-columns: 400px;
+    grid-template-rows: 100px 60px 10px 100px 90px 100px 130px 20px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "main"
+    "formas"
+    "logo"
+    "ayuda"
+    "footer";
+     }
+
+.logogummi_marca {
+    grid-area: header;
+    position: fixed;
+}
+
+.box_marca {
+    grid-area: header;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.nav_marca {
+    grid-area: main;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+  }
+
+
+.marcaprincipal {
+    grid-area: main;
+    position: absolute;
+    margin-top: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+.marcaprincipal_video {
+    grid-area: main;
+    position: absolute;
+    margin-top: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+   }
+
+
+.iconosfi_marca {
+    grid-area: formas;
+    position: absolute;
+    padding-top: 700px;
+  }
+
+  .suscripcion_marca {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_marca{
+    grid-area: iba;
+    justify-self: left;
+    position: absolute;
+    padding-top: 650px;
+}
+
+.footer_marca {
+    grid-area: footer;
+    justify-self: left;
+    position: absolute;
+    padding-top: 970px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_marca > li {
+    float:left;
+   }
+ 
+ .nav_marca li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_marca li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_marca li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_marca li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_marca li ul li {
+    position:relative;
+ }
+ 
+ .boton_marca {
+    background-color: black;
+}
+ 
+.piepagina_marca {
+    grid-area: ayuda;
+    padding-top: 320px;
+}
+
+}
+
+/*contacto.html versión iPad*/
+
+@media screen and  (max-width: 768px)
+{
+.contenedor_contacto {
+    grid-template-columns: 120px 100px 200px;
+    grid-template-rows: 70px 100px 300px 30px;
+    grid-template-areas: 
+    "menu menu menu"
+    "formulario formulario formulario"
+    "tabla tabla tabla"
+    "footer footer footer";
+     }
+
+    .navbar {
+        grid-area:menu;
+    }
+    
+    .contactogummi {
+        grid-area: formulario;
+        padding-top: 20px;
+    }
+    
+    .contactogummi_formas {
+        grid-area: formulario;
+     }
+    
+    .row1 {
+        grid-area: tabla;
+      }
+    
+    .container-fluid_contacto {
+        grid-area: tabla;
+    }
+    
+    .img-fluid {
+        grid-area: tabla;
+      }
+    
+    .img-fluid2 {
+        grid-area: tabla;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+}
+
+
+/*marca.html versión iPad*/
+@media screen and  (max-width: 768px)
+{
+.contenedor_marca {
+    grid-template-columns: 100px 60x 60px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-areas: 
+    "menu menu menu"
+    "formulario formulario formulario"
+    "tabla tabla tabla"
+    "footer footer footer";
+     }
+
+    .navbar {
+        grid-area:menu;
+    }
+    
+    .contactogummi {
+        grid-area: formulario;
+        position: relative;
+        background-color:#ebeae6;
+    }
+    
+    .contactogummi_formas {
+        grid-area: formulario;
+        transform: translate(360px, -260px);
+    }
+    
+    .row1 {
+        grid-area: tabla;
+        transform: translate(0px, -200px);
+        background-color: white;
+     }
+    
+    .container-fluid_2 {
+        grid-area: tabla;
+        background-color: white;
+        transform: translate(400px, -250px);
+        height: 50px;
+        width: 250px;
+     }
+    
+    .img-fluid {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(-30px, 200px);
+        height: auto;
+        width: auto;
+    }
+    
+    .img-fluid2 {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(250px, -30px);
+        height: auto;
+        width: auto;
+        }
+    
+    .footer {
+        grid-area: footer;
+    }
+    
+}
+
+/*marca.html versión Laptop*/
+
+@media screen and  (min-width: 769px)
+{
+.contenedor_marca {
+    display: grid;
+    justify-content:space-between;
+    justify-items: stretch;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 450px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_marca {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_marca {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_marca{
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.flexcaja_marca {
+    flex-wrap: wrap;
+
+}
+
+.marcaprincipal {
+    grid-area: formulario;
+}
+
+.marcaprincipal_video {
+    grid-area: formulario;
+    justify-self: right;
+}
+
+.piepagina_marca {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_marca {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_marca {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+     font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_marca {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_marca {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_marca > li {
+    float:left;
+   }
+ 
+ .nav_marca li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_marca li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_marca li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_marca li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_marca li ul li {
+    position:relative;
+ }
+ 
+ .nav_marca li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_marca {
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_marca {
+    color: black;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_marca {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.boton_marca {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+}
+
+
+/*contacto.html versión iPhone X*/
+@media screen and  (max-width: 480px)
+{
+.contenedor_contacto {
+    grid-template-areas: 
+    "menu"
+    "formulario"
+    "formulario"
+    "formulario"
+    "formulario"
+    "tabla"
+    "tabla"
+    "footer";
+     }
+
+     .navbar {
+        grid-area:menu;
+    }
+    
+    .contactogummi {
+        grid-area: formulario;
+         }
+    
+    .contactogummi_formas {
+        grid-area: formulario;
+        background-color: #ebeae6;
+        position: relative;
+        transform: translate(0px, 20px);
+    }
+    
+    .row1 {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(-20px, -140px);
+        
+     }
+    
+    .container-fluid_contacto {
+        grid-area: tabla;
+        transform: translate(10px, 20px);
+        position: absolute;
+        height: 50px;
+        width: 250px;
+     }
+    
+    .img-fluid {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(0px, 50px);
+        height: auto;
+        width: auto;
+    }
+    
+    .img-fluid2 {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(250px, -30px);
+        height: auto;
+        width: auto;
+        }
+    
+    .footer {
+        grid-area: footer;
+        position: absolute;
+        padding-top: 450px;
+    }
+
+}
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!--aca va todo el contenido de la pagina que no se debe visualizar-->
+    <meta charset="UTF-8"> <!--indica que se puedan leer las ñ o tildes correctamente, caracteres especiales como el $-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--para que nuestro sitio se pueda ver correctamente en el Edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--sirve para que podamos visualizar nuestro sitio en un dispositivo-->
+    <title>Gummi</title> <!--titulo de nuestro sitio que se va a visualizar en el navegador-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <div class="contenedor_preguntas">
+        <nav class="navbar navbar-expand-lg bg-lav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html" title="home"><img src="../assets/logo_gummi.JPG"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html#destacados">Destacados</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="productos.html">Men</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="productos.html">Kids</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="productos.html">Women</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Ingresar búsqueda" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <a href="login.html"><img src="../assets/login.JPG" alt="" title="login"></a>
+                <a href="carrito.html"><img src="../assets/carrito.JPG" alt="" title="carrito"></a>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+  <header>
+
+    <div class="row">
+        <div class="col-md-4">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">General</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Disponibilidad de productos</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Formas de pago</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Envios</a>
+          </div>
+        </div>
+        <div class="col-8" class="badge bg-primary text-wrap" style="width: 50rem;">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <h4 id="list-item-1">General</h4>
+            <p>¿Dónde están ubicados?
+                Nuestra oficina y depósito están en José Mármol, 1650, Bella Vista.
+                ¿Tienen local o showroom para probar?
+                No, pero tenemos un depósito en Bella Vista donde podés retirar tu pedido coordinando la visita previamente.</span>
+                ¿Cómo puedo contactarlos?
+                Podes escribirnos a ibashop@ibashop.com.ar que es el área de atencion al cliente .
+                ¿Cuál sería mi talle?
+                Según cada producto. Las zapatillas Balen, Follow, G.Air y Zuecos son de horma chica, medio talle menos del que usamos habitualmente. Contamos con una tabla de talles en nuestro sitio para orientarte mejor en tu elección.
+                ¿Venden al por mayor? SI !
+                Si estás interesado en comprar al por mayor productos de GUMMI y COOLPINK SHOES, por favor tené en cuenta que la compra mínima es un módulo. Es decir, 12 pares del mismo modelo y color con la siguiente curva: Dama 35/1 36/2 37/3 38/3 39/2 40/1 y Caballero 39/1 40/1 41/3 42/3 43/2 44/1 45/1 - Escribinos a ventas@ibabsas.com detallando un número de contacto para recibir catálogo y lista de precios.</p>
+            <h4 id="list-item-2">Disponibilidad de productos</h4>
+            <p> ¿Las Balen tienen el número grabado adelante?
+                Sí, las BALEN vienen con el número bordado como parte del diseño de fábrica.
+                ¿En qué colores vienen los modelos?
+                Podes ver todos los modelos y colores disponibles en nuestro sitio.
+                ¿Las zapatillas son unisex?
+                ¿Son originales?
+                Todos nuestros productos son originales de GUMMI y COOLPINK SHOES.</p>
+            <h4 id="list-item-3">Formas de pago</h4>
+            <p> ¿Cómo puedo comprar?
+                Podes comprar en www.ibashop.com.ar con diferentes medios de pago.
+                Hacemos envíos a todo el país por OCA.
+                ¿Cuáles son los medios de pago?
+                Podes abonar a través de Mercado Pago con tarjetas de crédito y débito o en efectivo en RapiPago, PagoFacil, Link, Cobroexpres y ProvinciaNet.
+                ¿Se puede comprar en cuotas?
+                Sí, podes abonar en 3 y 6 cuotas sin interés con todas las tarjetas, y en mas cuotas con interés, según el medio de pago elegido en www.ibashop.com.ar.</p>
+            <h4 id="list-item-4">Envios</h4>
+            <p> ¿Cuánto demoran los envíos?
+                Despachamos nuestros pedidos los días martes y jueves. Los envíos demoran entre 1 y 5 días hábiles en llegar, dependiendo la zona, desde el momento que despachamos.
+                ¿Quién paga el envío?
+                El envío es a cargo del comprador. Si el supera los $10000 es gratis.
+                ¿Cuánto sale el envío?
+                Podes consultar y calcular el costo del envío simulando una compra en el carrito de compras de www.ibashop.com.ar.
+                ¿Hacen cambios?
+                Sí, tendrías que contemplar los gastos de envío y consultar stock previamente.</p>
+          </div>
+        </div>
+      </div>
+
+  </header>
+
+  <section class="container-fluid mt-4 mb-5">
+    <div class="row">
+    <div class="alert alert-success col-lg-4 col-md-6" role="alert">
+        <h4 class="alert-heading">Ayuda!</h4>
+        <p><a href="marca.html">Quienes Somos</a></p>
+        <p><a href="preguntas.html">Preguntas frecuentes</a></p>
+        <p><a href="contacto.html">Contacto</a></p>
+        <hr>
+        <p class="mb-0">Siempre que lo necesites, asegurate de usar nuestros calzados para mantener tu pisada ordenada y equilibrada. Visita nuestras redes y suscribite a las novedades.</p>
+        <div class="footer text-center">
+        <a title="facebook" href="https://www.facebook.com/gummishoes"target="_blank"><img src="../assets/facebook.JPG"></a>
+        <a title="instagram" href="https://www.instagram.com/gummibrand/?hl=es" target="_blank"><img src="../assets/instagram.JPG"></a>
+       </div>
+      </div>
+          <div class="col-lg-4 col-md-6">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+               
+            <div class="container-fluid">
+                <h2 class="text-left h3 mt-4 mb-4">Suscribite al news</h2>
+                <div class="row">
+                <article class="col-md-6">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+        
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Suscribirme</button>
+                        </div>
+                      </form>
+                </article>
+            </div>
+          </div>
+       </div>
+      </div>
+    </section>
+
+  <footer class="footer text-center">  
+   <h5>gummi - iBA Shop - Powered by easycommerce</h5>
+   </footer>
+</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
