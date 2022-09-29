@@ -6,7 +6,7 @@
 @import "login";
 @import "contacto";
 @import "carrito";       
-   
+  
    /*Configuraciones generales
     .nav-link:active {
         color: white;
@@ -15,43 +15,9 @@
         font-style: oblique; 
     }
 
-    .contacto__formulario--titulo .contacto__formas--titulo .contacto__formas--otras .datospersonales__registrate {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: left;
-        font-size: small; 
-    }
-    
-    .contacto__formas--otras .usuarioyclave__login .datospersonales__registrate {
-        color: darkgray;
-    }
- 
-    .contacto__formulario--titulo .contacto__formas--titulo a:visited .btn.btn-primary .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child {
-      color: black;
-    }
-
-    .usuarioyclave__login--color .contacto__formulario--color .datospersonales__registrate--color {
+.usuarioyclave__login--color .contacto__formulario--color .datospersonales__registrate--color {
       background-color: rgb(223, 236, 255);
   }
-
-  
-  .bg-lav .btn-primary .btn.btn-primary .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child {
-    background-color:#ebeae6;
-  }
-  
-  .contacto__formulario--titulo {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.contacto__formas--titulo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  
-}
-
-.contacto__formas--otras {
-    margin-bottom: 200px;
-}
 
 .usuarioyclave__login .datospersonales__registrate{
     margin-bottom: 150px;
@@ -65,46 +31,48 @@
   padding-top: 40px;
 }
 
-a:active .btn.btn-primary:hover .btn.btn-primary:active .nav-link:active .btn.btn-outline-success:hover .btn.btn-outline-success:active .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover #boton-vaciar.btn-primary:active .btn:first-child:active {
-  color: white;
-}
-
-a:active #boton-vaciar.btn-primary:active .btn:first-child:active {
-  font-weight: bold;
-  font-style: oblique;
-}
-
-.btn.btn-primary:hover .btn.btn-primary:active .nav-link:active .btn.btn-outline-success:hover .btn.btn-outline-success:active .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover #boton-vaciar.btn-primary:active .btn:first-child:active {
-  background-color: blue;
-  border-color: $bordecolorboton;
-}
-
-.btn.btn-primary:hover .btn.btn-outline-success:hover .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover {
-  font-weight: bold;   
-}
-
-.btn.btn-primary:active .nav-link:active .btn.btn-outline-success:active {
-  font-style: oblique;   
-}
-
-
-.btn-primary .btn.btn-primary .btn-outline-success .btn.btn-outline-success .btn:first-child {
-  border-color: black;
-}
-
 .login {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
 }
 
-#destacados {
-  text-align:center;
+*/
+
+
+.contacto__formulario--titulo .contacto__formas--titulo .contacto__formas--otras .datospersonales__registrate {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-size: small; 
 }
 
-a:visited {
-  text-decoration: none;
+.contacto__formas--otras .usuarioyclave__login .datospersonales__registrate {
+  color: darkgray;
 }
-*/
+
+.contacto__formulario--titulo .contacto__formas--titulo a:visited .btn.btn-primary .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child {
+  color: black;
+}
+
+.contacto__formulario--titulo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.contacto__formas--titulo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.contacto__formas--otras {
+  margin-bottom: 200px;
+}
+
+.contacto__formulario--color {
+  padding-bottom: 15px;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
 
 .btn.btn-primary:hover {
   color: white;
@@ -185,8 +153,6 @@ a:hover {
   background-color:#ebeae6;
 }
 
-
-
 /*contacto.html versión Laptop*/
 
 @media screen and  (min-width: 769px)
@@ -212,18 +178,19 @@ a:hover {
 
 .contactogummi_formas {
     position: absolute;
-    transform: translate(460px, -250px);
+    transform: translate(800px, -250px);
 }
 
 .contactogummi {
   grid-area: formulario;
   padding-top: 35px;
+  transform: translate(280px, 0px);
 }
 
 .contactogummi_formas {
   grid-area: formulario;
   position: absolute;
-  transform: translate(460px, -250px);
+  transform: translate(800px, -250px);
 }
 
 
@@ -236,7 +203,7 @@ a:hover {
  .container-fluid_contacto {
     grid-area: tabla;
     position: absolute;
-    transform: translate(250px, -250px);
+    transform: translate(700px, -250px);
  }
 
 .footer {
@@ -306,7 +273,6 @@ a:hover {
     
     .contactogummi_formas {
         grid-area: formulario;
-        background-color: #ebeae6;
         position: relative;
         transform: translate(0px, 20px);
     }

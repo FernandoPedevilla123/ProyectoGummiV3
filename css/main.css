@@ -7,43 +7,9 @@
         font-style: oblique; 
     }
 
-    .contacto__formulario--titulo .contacto__formas--titulo .contacto__formas--otras .datospersonales__registrate {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: left;
-        font-size: small; 
-    }
-    
-    .contacto__formas--otras .usuarioyclave__login .datospersonales__registrate {
-        color: darkgray;
-    }
- 
-    .contacto__formulario--titulo .contacto__formas--titulo a:visited .btn.btn-primary .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child {
-      color: black;
-    }
-
-    .usuarioyclave__login--color .contacto__formulario--color .datospersonales__registrate--color {
+.usuarioyclave__login--color .contacto__formulario--color .datospersonales__registrate--color {
       background-color: rgb(223, 236, 255);
   }
-
-  
-  .bg-lav .btn-primary .btn.btn-primary .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child {
-    background-color:#ebeae6;
-  }
-  
-  .contacto__formulario--titulo {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.contacto__formas--titulo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  
-}
-
-.contacto__formas--otras {
-    margin-bottom: 200px;
-}
 
 .usuarioyclave__login .datospersonales__registrate{
     margin-bottom: 150px;
@@ -57,46 +23,39 @@
   padding-top: 40px;
 }
 
-a:active .btn.btn-primary:hover .btn.btn-primary:active .nav-link:active .btn.btn-outline-success:hover .btn.btn-outline-success:active .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover #boton-vaciar.btn-primary:active .btn:first-child:active {
-  color: white;
-}
-
-a:active #boton-vaciar.btn-primary:active .btn:first-child:active {
-  font-weight: bold;
-  font-style: oblique;
-}
-
-.btn.btn-primary:hover .btn.btn-primary:active .nav-link:active .btn.btn-outline-success:hover .btn.btn-outline-success:active .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover #boton-vaciar.btn-primary:active .btn:first-child:active {
-  background-color: blue;
-  border-color: $bordecolorboton;
-}
-
-.btn.btn-primary:hover .btn.btn-outline-success:hover .btn-outline-success:hover .btn:first-child:hover #boton-vaciar.btn-primary:hover {
-  font-weight: bold;   
-}
-
-.btn.btn-primary:active .nav-link:active .btn.btn-outline-success:active {
-  font-style: oblique;   
-}
-
-
-.btn-primary .btn.btn-primary .btn-outline-success .btn.btn-outline-success .btn:first-child {
-  border-color: black;
-}
-
 .login {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
 }
 
-#destacados {
-  text-align:center;
-}
-
-a:visited {
-  text-decoration: none;
-}
 */
+.contacto__formulario--titulo .contacto__formas--titulo .contacto__formas--otras .datospersonales__registrate {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-size: small; }
+
+.contacto__formas--otras .usuarioyclave__login .datospersonales__registrate {
+  color: darkgray; }
+
+.contacto__formulario--titulo .contacto__formas--titulo a:visited .btn.btn-primary .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child, .contacto__formulario--titulo .contacto__formas--titulo a:visited .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .contacto__formulario--titulo .contacto__formas--titulo a:visited .btn:first-child .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child {
+  color: black; }
+
+.contacto__formulario--titulo {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.contacto__formas--titulo {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.contacto__formas--otras {
+  margin-bottom: 200px; }
+
+.contacto__formulario--color {
+  padding-bottom: 15px;
+  background-color: #d1e7dd;
+  border-color: #badbcc; }
+
 .btn.btn-primary:hover, .btn.btn-outline-success:hover, .btn-outline-success:hover, .btn:first-child:hover, #boton-vaciar.btn-primary:hover, #boton-vaciar.btn-primary:active, #boton-vaciar.btn-primary:active .btn:first-child:active, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:hover:first-child {
   color: white;
   background-color: blue;
@@ -144,21 +103,22 @@ a:hover {
     display: grid;
     grid-template-columns: 750px 400px 200px;
     grid-template-rows: 60px 480px 300px 50px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .contactogummi .contactogummi_formas {
     grid-area: formulario; }
   .contactogummi_formas {
     position: absolute;
-    transform: translate(460px, -250px); }
+    transform: translate(800px, -250px); }
   .contactogummi {
     grid-area: formulario;
-    padding-top: 35px; }
+    padding-top: 35px;
+    transform: translate(280px, 0px); }
   .contactogummi_formas {
     grid-area: formulario;
     position: absolute;
-    transform: translate(460px, -250px); }
+    transform: translate(800px, -250px); }
   .row_contacto {
     grid-area: tabla;
     position: absolute;
@@ -166,7 +126,7 @@ a:hover {
   .container-fluid_contacto {
     grid-area: tabla;
     position: absolute;
-    transform: translate(250px, -250px); }
+    transform: translate(700px, -250px); }
   .footer {
     grid-area: footer; } }
 
@@ -175,7 +135,7 @@ a:hover {
   .contenedor_contacto {
     grid-template-columns: 120px 100px 200px;
     grid-template-rows: 70px 100px 300px 30px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .contactogummi {
@@ -191,14 +151,13 @@ a:hover {
 /*contacto.html versión iPhone X*/
 @media screen and (max-width: 480px) {
   .contenedor_contacto {
-    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
+    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
   .navbar {
     grid-area: menu; }
   .contactogummi {
     grid-area: formulario; }
   .contactogummi_formas {
     grid-area: formulario;
-    background-color: #ebeae6;
     position: relative;
     transform: translate(0px, 20px); }
   .row1 {
