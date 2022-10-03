@@ -1,0 +1,143 @@
+/*carrito.html versión Laptop*/
+
+@media screen and  (min-width: 769px)
+{
+.contenedor_carrito {
+    display: grid;
+    grid-template-columns: 750px 400px 200px;
+    grid-template-rows: 60px 480px 300px 50px;
+    grid-template-areas: 
+    "menu menu menu"
+    "formulario formulario formulario"
+    "tabla tabla tabla"
+    "footer footer footer";
+     }
+
+.navbar {
+    grid-area:menu;
+}
+
+.container{
+    grid-area: formulario;
+}
+
+.row_carrito {
+    grid-area: tabla;
+    position: absolute;
+    padding-top: 100px;
+ }
+
+ .container-fluid_carrito {
+    grid-area: tabla;
+    position: absolute;
+    transform: translate(800px, -320px);
+ }
+
+.footer {
+    grid-area: footer;
+    position: relative;
+    padding-top: 150px;
+}
+
+}
+
+/*login.html versión iPad*/
+
+@media screen and  (max-width: 768px)
+{
+.contenedor_login {
+    grid-template-columns: 120px 100px 200px;
+    grid-template-rows: 70px 100px 300px 30px;
+    grid-template-areas: 
+    "menu menu menu"
+    "formulario formulario formulario"
+    "tabla tabla tabla"
+    "footer footer footer";
+     }
+
+    .navbar {
+        grid-area:menu;
+    }
+    
+    .container {
+        grid-area: formulario;
+    }
+    
+    .row_carrito .container-fluid_carrito{
+        grid-area: tabla;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+
+    .form-control {
+      display: none;
+    }
+
+    .btn-outline-success {
+        display: none;
+      }
+
+}
+
+
+/*login.html versión iPhone X*/
+@media screen and  (max-width: 480px)
+{
+.contenedor_login{
+    grid-template-areas: 
+    "menu"
+    "formulario"
+    "formulario"
+    "formulario"
+    "formulario"
+    "tabla"
+    "tabla"
+    "footer";
+     }
+
+    .navbar-toggler-icon {
+        grid-area:menu;
+    }
+    
+    .container{
+        grid-area: formulario;
+         }
+    
+       
+    .row_carrito {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(-20px, -10px);
+        
+     }
+    
+    .container-fluid_carrrito {
+        grid-area: tabla;
+        transform: translate(10px, 20px);
+        position: absolute;
+        height: 50px;
+        width: 250px;
+     }
+
+     .iconos_facebook_carrito {
+        grid-area: tabla;
+        transform: translate(98px, -20px);
+        position: absolute;
+     }
+
+     .iconos_instagram_carrito {
+        grid-area: tabla;
+        transform: translate(126px, -20px);
+        position: absolute;
+     }
+
+    
+    .footer {
+        grid-area: footer;
+        position: absolute;
+        transform: translateY(90px);
+    }
+
+}
