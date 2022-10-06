@@ -29,7 +29,15 @@
 }
 
 #boton-vaciar.btn-primary:active {
-  @extend .nav-link:active;
+  @extend .btn.btn-primary:active;
+}
+
+a.btn.btn.btn-primary:active {
+  @extend .btn.btn-primary:active;
+}
+
+input.btn.btn-primary:active {
+  @extend .btn.btn-primary:active;
 }
 
 .btn.btn-outline-success:active {
@@ -37,11 +45,11 @@
 }
 
 .btn.btn-primary:active {
-  @extend .nav-link:active;
+  @extend button.btn.btn-outline-success:active;
 }
 
-#boton-vaciar.btn-primary:active .btn:first-child:active {
-  @extend .nav-link:active;
+.btn:first-child:active {
+  @extend .btn.btn-primary:active;
 }
 
 .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:first-child  {
@@ -49,12 +57,8 @@
 }
 
 a:active {
-  @extend .nav-link:active;
+  @extend .btn.btn-primary:active;
   font-weight: bold;
-}
-
-.btn.btn-primary:active .btn.btn-outline-success:active {
-  @extend .nav-link:active;
 }
 
 .form-control-carrito  {
@@ -65,6 +69,9 @@ a:active {
   @extend  .btn.btn-outline-success.bg-bla;
  }
 
+.form-control {
+  border-color: black;
+}
 
 .nav-link:active {
   color: white;
@@ -100,26 +107,41 @@ a:hover {
   background-color:#ebeae6;
 }
 
+a.list-group-item.list-group-item-action {
+  color: black;
+  background-color: #ebeae6;
+  border-color: black;
+}
+
+a.list-group-item.list-group-item-action:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+a.list-group-item.list-group-item-action:active {
+color: white;
+background-color: black;
+border-color: black;
+font-style: oblique; 
+}
+
 .form-control  {
   position: absolute;
   transform: translateX(-270px);
   width: 171px;
  }
 
- 
-
- .btn.btn-outline-success.bg-bla {
+.btn.btn-outline-success.bg-bla {
   position: absolute;
   transform: translateX(-90px);
  }
-
 
  .bg-bla {
   background-color: #ebeae6;
   border-color: black;
   border: black;
  }
-
 
  a.dropdown-item:active {
   color: white;
@@ -128,7 +150,7 @@ a:hover {
   font-style: oblique;
  }
 
- button.btn.btn-outline-success.bg-bla:active {
+ button.btn.btn-outline-success:active {
   color: white;
   background-color: black;
   border-color: black;
@@ -136,7 +158,7 @@ a:hover {
   font-style: oblique;
  }
 
- button.btn.btn-primary.bg-bla:active {
+ button.btn.btn-primary:active {
   color: white;
   background-color: black;
   border-color: black;
@@ -148,8 +170,7 @@ a:hover {
   border-color: black;
  }
 
- 
-.nav-link:active {
+ .nav-link:active {
   color: white;
   background-color: black;
   border-color: black;

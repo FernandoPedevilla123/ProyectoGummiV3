@@ -340,7 +340,10 @@
 a:active {
   font-weight: bold; }
 
-.nav-link:active, #boton-vaciar.btn-primary:active, .btn.btn-outline-success:active, .btn.btn-primary:active, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:active:first-child, #boton-vaciar.btn-primary:active .btn:first-child:active, a:active, .btn.btn-primary:active .btn.btn-outline-success:active, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:active:first-child .btn.btn-outline-success:active {
+.form-control, .form-control-carrito {
+  border-color: black; }
+
+.nav-link:active, .btn.btn-outline-success:active {
   color: white;
   background-color: black;
   border-color: black;
@@ -368,6 +371,22 @@ a:hover {
 .bg-lav {
   background-color: #ebeae6; }
 
+a.list-group-item.list-group-item-action {
+  color: black;
+  background-color: #ebeae6;
+  border-color: black; }
+
+a.list-group-item.list-group-item-action:hover {
+  color: black;
+  background-color: white;
+  border-color: black; }
+
+a.list-group-item.list-group-item-action:active {
+  color: white;
+  background-color: black;
+  border-color: black;
+  font-style: oblique; }
+
 .form-control, .form-control-carrito {
   position: absolute;
   transform: translateX(-270px);
@@ -388,14 +407,14 @@ a.dropdown-item:active {
   border-color: black;
   font-style: oblique; }
 
-button.btn.btn-outline-success.bg-bla:active, button.btn-outline-success:active {
+button.btn.btn-outline-success:active, .btn.btn-primary:active, #boton-vaciar.btn-primary:active, a.btn.btn-primary:active, input.btn.btn-primary:active, .btn:first-child:active, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:active:first-child, a:active {
   color: white;
   background-color: black;
   border-color: black;
   background-color: black;
   font-style: oblique; }
 
-button.btn.btn-primary.bg-bla:active, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary button.bg-bla.btn:active:first-child {
+button.btn.btn-primary:active, button#boton-vaciar.btn-primary:active, button.btn:first-child:active, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary button.btn:active:first-child {
   color: white;
   background-color: black;
   border-color: black;
@@ -405,7 +424,7 @@ button.btn.btn-primary.bg-bla:active, .btn-outline-success .btn.btn-outline-succ
   border: black;
   border-color: black; }
 
-.nav-link:active, #boton-vaciar.btn-primary:active, .btn.btn-outline-success:active, .btn.btn-primary:active, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:active:first-child, #boton-vaciar.btn-primary:active .btn:first-child:active, a:active, .btn.btn-primary:active .btn.btn-outline-success:active, .btn-outline-success .btn.btn-outline-success #boton-vaciar.btn-primary .btn:active:first-child .btn.btn-outline-success:active {
+.nav-link:active, .btn.btn-outline-success:active {
   color: white;
   background-color: black;
   border-color: black;
