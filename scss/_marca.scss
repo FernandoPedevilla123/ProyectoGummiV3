@@ -38,6 +38,7 @@
     position: absolute;
     transform: translate(-760px, 300px);
     padding-top: 100px;
+    margin-left: 10px;
  }
 
  .container-fluid_marca {
@@ -112,12 +113,12 @@
         grid-area: formulario;
         position: relative;
         transform: translateY(-250px);
+        padding-left: 30px;
     }
     
     .marcaprincipal_video {
         grid-area: formulario;
-        position: relative;
-        transform: translateY(-550px);
+        display: none;
     }
     
     .row_marca {

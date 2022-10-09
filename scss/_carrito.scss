@@ -13,33 +13,38 @@
     "footer footer footer";
      }
 
-.navbar {
-    grid-area:menu;
-}
-
-.container{
-    grid-area: formulario;
-}
-
-.row_carrito {
-    grid-area: tabla;
-    position: absolute;
-    padding-top: 100px;
- }
-
- .container-fluid_carrito {
-    grid-area: tabla;
-    position: absolute;
-    transform: translate(800px, -320px);
- }
-
-.footer {
-    grid-area: footer;
-    position: relative;
-    padding-top: 150px;
-}
-
-}
+     .navbar {
+        grid-area:menu;
+    }
+    
+    .container{
+        grid-area: formulario;
+    }
+    
+    .container-fluid_carrito {
+      grid-area: formulario;
+      padding-top: 20px;
+      transform: translate(280px, 0px);
+    }
+      
+    .row_carrito {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(5px, -80px);
+        padding-top: 100px;
+     }
+    
+     .container-fluid_carrito {
+        grid-area: tabla;
+        position: absolute;
+        transform: translate(900px, -310px);
+     }
+    
+    .footer {
+        grid-area: footer;
+        padding-top: 40px;
+    }
+}    
 
 /*login.html versión iPad*/
 
@@ -61,6 +66,7 @@
     
     .container {
         grid-area: formulario;
+        padding-left: 30px;
     }
     
     .row_carrito .container-fluid_carrito{
@@ -77,7 +83,7 @@
 
     .btn-outline-success {
         display: none;
-      }
+    }
 
 }
 
@@ -109,7 +115,7 @@
     .row_carrito {
         grid-area: tabla;
         position: absolute;
-        transform: translate(-20px, -10px);
+        transform: translate(-5px, -10px);
         
      }
     
@@ -121,22 +127,8 @@
         width: 250px;
      }
 
-     .iconos_facebook_carrito {
-        grid-area: tabla;
-        transform: translate(98px, -20px);
-        position: absolute;
-     }
-
-     .iconos_instagram_carrito {
-        grid-area: tabla;
-        transform: translate(126px, -20px);
-        position: absolute;
-     }
-
     .footer {
         grid-area: footer;
-        position: absolute;
-        transform: translateY(90px);
     }
 
 }

@@ -51,6 +51,15 @@
     grid-area: footer;
 }
 
+.usuarioyclave__login--color {
+    width: 500px;
+}
+
+.datospersonales__registrate--color {
+    width: 500px;
+}
+
+
 }
 
 /*login.html versión iPad*/
@@ -74,10 +83,12 @@
     .usuarioyclave {
         grid-area: formulario;
         padding-top: 20px;
+        margin-left: 10px;
     }
     
     .datospersonales {
         grid-area: formulario;
+        margin-left: 10px;
      }
 
     .row1 .container-fluid_login {
@@ -92,9 +103,14 @@
       display: none;
     }
 
-    .iconos {
-      position: absolute;
-     }
+     .usuarioyclave__login--color {
+        width: 350px;
+    }
+
+    .datospersonales__registrate--color {
+        width: 350px;
+    }
+    
 }
 
 
@@ -121,10 +137,19 @@
         grid-area: formulario;
          }
     
+    .usuarioyclave__login--color {
+        width: 250px;
+    }
+
     .datospersonales {
         grid-area: formulario;
         position: relative;
         transform: translate(0px, 20px);
+        padding-bottom: 40px;
+    }
+
+    .datospersonales__registrate--color {
+        width: 250px;
     }
     
     .row1 {
@@ -141,12 +166,8 @@
         height: 50px;
         width: 250px;
      }
-
     
-    .footer {
+     .footer {
         grid-area: footer;
-        position: absolute;
-        padding-top: 450px;
     }
-
 }

@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 750px 400px 200px;
     grid-template-rows: 60px 480px 300px 50px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .marcaprincipal .marcaprincipal_video {
@@ -22,7 +22,8 @@
     grid-area: tabla;
     position: absolute;
     transform: translate(-760px, 300px);
-    padding-top: 100px; }
+    padding-top: 100px;
+    margin-left: 10px; }
   .container-fluid_marca {
     grid-area: tabla;
     position: absolute;
@@ -35,7 +36,7 @@
   .contenedor_marca {
     grid-template-columns: 120px 100px 200px;
     grid-template-rows: 70px 100px 300px 30px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .marcaprincipal {
@@ -51,17 +52,17 @@
 /*marca.html versión iPhone X*/
 @media screen and (max-width: 480px) {
   .contenedor_marca {
-    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
+    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
   .navbar {
     grid-area: menu; }
   .marcaprincipal {
     grid-area: formulario;
     position: relative;
-    transform: translateY(-250px); }
+    transform: translateY(-250px);
+    padding-left: 30px; }
   .marcaprincipal_video {
     grid-area: formulario;
-    position: relative;
-    transform: translateY(-550px); }
+    display: none; }
   .row_marca {
     grid-area: tabla;
     position: absolute; }
@@ -79,7 +80,7 @@
     display: grid;
     grid-template-columns: 750px 400px 200px;
     grid-template-rows: 60px 480px 300px 50px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .usuarioyclave .datospersonales {
@@ -102,42 +103,55 @@
     position: absolute;
     transform: translate(510px, -320px); }
   .footer {
-    grid-area: footer; } }
+    grid-area: footer; }
+  .usuarioyclave__login--color {
+    width: 500px; }
+  .datospersonales__registrate--color {
+    width: 500px; } }
 
 /*login.html versión iPad*/
 @media screen and (max-width: 768px) {
   .contenedor_login {
     grid-template-columns: 120px 100px 200px;
     grid-template-rows: 70px 100px 300px 30px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .usuarioyclave {
     grid-area: formulario;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-left: 10px; }
   .datospersonales {
-    grid-area: formulario; }
+    grid-area: formulario;
+    margin-left: 10px; }
   .row1 .container-fluid_login {
     grid-area: tabla; }
   .footer {
     grid-area: footer; }
   .btn-outline-success {
     display: none; }
-  .iconos {
-    position: absolute; } }
+  .usuarioyclave__login--color {
+    width: 350px; }
+  .datospersonales__registrate--color {
+    width: 350px; } }
 
 /*login.html versión iPhone X*/
 @media screen and (max-width: 480px) {
   .contenedor_login {
-    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
+    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
   .navbar {
     grid-area: menu; }
   .usuarioyclave {
     grid-area: formulario; }
+  .usuarioyclave__login--color {
+    width: 250px; }
   .datospersonales {
     grid-area: formulario;
     position: relative;
-    transform: translate(0px, 20px); }
+    transform: translate(0px, 20px);
+    padding-bottom: 40px; }
+  .datospersonales__registrate--color {
+    width: 250px; }
   .row1 {
     grid-area: tabla;
     position: absolute;
@@ -149,9 +163,7 @@
     height: 50px;
     width: 250px; }
   .footer {
-    grid-area: footer;
-    position: absolute;
-    padding-top: 450px; } }
+    grid-area: footer; } }
 
 .contacto__formulario--titulo {
   margin-top: 5px;
@@ -174,7 +186,7 @@
     display: grid;
     grid-template-columns: 750px 400px 200px;
     grid-template-rows: 60px 480px 300px 50px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .contactogummi .contactogummi_formas {
@@ -186,32 +198,37 @@
   .contactogummi_formas {
     grid-area: formulario;
     position: absolute;
-    transform: translate(800px, -294px); }
+    transform: translate(800px, -252px); }
   .row_contacto {
     grid-area: tabla;
     position: absolute;
-    transform: translate(-760px, 300px);
+    transform: translate(-750px, 300px);
     padding-top: 100px; }
   .container-fluid_contacto {
     grid-area: tabla;
     position: absolute;
     transform: translate(510px, -320px); }
   .footer {
-    grid-area: footer; } }
+    grid-area: footer; }
+  .contacto__formulario--color, .usuarioyclave__login--color .datospersonales__registrate--color {
+    width: 500px;
+    height: 30px; } }
 
 /*contacto.html versión iPad*/
 @media screen and (max-width: 768px) {
   .contenedor_contacto {
     grid-template-columns: 120px 100px 200px;
     grid-template-rows: 70px 100px 300px 30px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .contactogummi {
     grid-area: formulario;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-left: 10px; }
   .contactogummi_formas {
-    grid-area: formulario; }
+    grid-area: formulario;
+    margin-left: 10px; }
   .row1 .container-fluid_contacto .img-fluid .img-fluid2 {
     grid-area: tabla; }
   .footer {
@@ -220,14 +237,13 @@
     display: none; }
   .btn-outline-success {
     display: none; }
-  .iconos {
-    position: relative;
-    transform: translate(-1px, -1px); } }
+  .contacto__formulario--color, .usuarioyclave__login--color .datospersonales__registrate--color {
+    width: 350px; } }
 
 /*contacto.html versión iPhone X*/
 @media screen and (max-width: 480px) {
   .contenedor_contacto {
-    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
+    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
   .navbar {
     grid-area: menu; }
   .contactogummi {
@@ -246,22 +262,10 @@
     position: absolute;
     height: 50px;
     width: 250px; }
-  .iconos_facebook {
-    grid-area: tabla;
-    position: absolute;
-    transform: translate(270px, -560px);
-    height: auto;
-    width: auto; }
-  .iconos_instagram {
-    grid-area: tabla;
-    position: absolute;
-    transform: translate(300px, -560px);
-    height: auto;
-    width: auto; }
   .footer {
-    grid-area: footer;
-    position: absolute;
-    padding-top: 450px; } }
+    grid-area: footer; }
+  .contacto__formulario--color, .usuarioyclave__login--color .datospersonales__registrate--color {
+    width: 250px; } }
 
 /*carrito.html versión Laptop*/
 @media screen and (min-width: 769px) {
@@ -269,34 +273,39 @@
     display: grid;
     grid-template-columns: 750px 400px 200px;
     grid-template-rows: 60px 480px 300px 50px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .container {
     grid-area: formulario; }
+  .container-fluid_carrito {
+    grid-area: formulario;
+    padding-top: 20px;
+    transform: translate(280px, 0px); }
   .row_carrito {
     grid-area: tabla;
     position: absolute;
+    transform: translate(5px, -80px);
     padding-top: 100px; }
   .container-fluid_carrito {
     grid-area: tabla;
     position: absolute;
-    transform: translate(800px, -320px); }
+    transform: translate(900px, -310px); }
   .footer {
     grid-area: footer;
-    position: relative;
-    padding-top: 150px; } }
+    padding-top: 40px; } }
 
 /*login.html versión iPad*/
 @media screen and (max-width: 768px) {
   .contenedor_login {
     grid-template-columns: 120px 100px 200px;
     grid-template-rows: 70px 100px 300px 30px;
-    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
+    grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
   .container {
-    grid-area: formulario; }
+    grid-area: formulario;
+    padding-left: 30px; }
   .row_carrito .container-fluid_carrito {
     grid-area: tabla; }
   .footer {
@@ -309,7 +318,7 @@
 /*login.html versión iPhone X*/
 @media screen and (max-width: 480px) {
   .contenedor_login {
-    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
+    grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
   .navbar-toggler-icon {
     grid-area: menu; }
   .container {
@@ -317,25 +326,15 @@
   .row_carrito {
     grid-area: tabla;
     position: absolute;
-    transform: translate(-20px, -10px); }
+    transform: translate(-5px, -10px); }
   .container-fluid_carrrito {
     grid-area: tabla;
     transform: translate(10px, 20px);
     position: absolute;
     height: 50px;
     width: 250px; }
-  .iconos_facebook_carrito {
-    grid-area: tabla;
-    transform: translate(98px, -20px);
-    position: absolute; }
-  .iconos_instagram_carrito {
-    grid-area: tabla;
-    transform: translate(126px, -20px);
-    position: absolute; }
   .footer {
-    grid-area: footer;
-    position: absolute;
-    transform: translateY(90px); } }
+    grid-area: footer; } }
 
 a:active {
   font-weight: bold; }
