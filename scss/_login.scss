@@ -47,7 +47,7 @@
     transform: translate(510px, -320px);
  }
 
-.footer {
+.footer_login {
     grid-area: footer;
 }
 
@@ -95,7 +95,7 @@
         grid-area: tabla;
     }
     
-    .footer {
+    .footer_login {
         grid-area: footer;
     }
 
@@ -152,7 +152,7 @@
         width: 250px;
     }
     
-    .row1 {
+    .row_login {
         grid-area: tabla;
         position: absolute;
         transform: translate(-20px, -140px);
@@ -167,7 +167,9 @@
         width: 250px;
      }
     
-     .footer {
+     .footer_login {
         grid-area: footer;
+        position: relative;
+        transform: translateY(550px);
     }
 }

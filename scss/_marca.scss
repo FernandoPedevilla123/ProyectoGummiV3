@@ -47,7 +47,7 @@
     transform: translate(510px, -320px);
  }
 
-.footer {
+.footer_marca {
     grid-area: footer;
 }
 
@@ -85,7 +85,7 @@
         grid-area: tabla;
     }
     
-    .footer {
+    .footer_marca {
         grid-area: footer;
     }
 }
@@ -93,7 +93,7 @@
 /*marca.html versión iPhone X*/
 @media screen and  (max-width: 480px)
 {
-.contenedor_marca {
+.contenedor_marca{
     grid-template-areas: 
     "menu"
     "formulario"
@@ -111,32 +111,31 @@
     
     .marcaprincipal {
         grid-area: formulario;
-        position: relative;
-        transform: translateY(-250px);
-        padding-left: 30px;
+        position: absolute;
+        transform: translate(20px, -250px);
     }
     
     .marcaprincipal_video {
-        grid-area: formulario;
         display: none;
-    }
-    
+     }
+           
     .row_marca {
         grid-area: tabla;
         position: absolute;
-         
+        transform: translate(-5px, 250px);
+        padding-bottom: 10px;
      }
     
     .container-fluid_marca {
+        grid-area: tabla;
+        padding-bottom: 20px;
         position: absolute;
-        transform: translate(10px, 20px);
-     }
-    
+    }
 
-    .footer {
+    .footer_marca {
         grid-area: footer;
         position: absolute;
-        padding-top: 450px;
+        transform: translate(20px, -200px);
     }
 
 }

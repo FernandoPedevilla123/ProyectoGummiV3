@@ -28,7 +28,7 @@
     grid-area: tabla;
     position: absolute;
     transform: translate(510px, -320px); }
-  .footer {
+  .footer_marca {
     grid-area: footer; } }
 
 /*marca.html versión iPad*/
@@ -46,7 +46,7 @@
     grid-area: formulario; }
   .row_marca .container-fluid_marca {
     grid-area: tabla; }
-  .footer {
+  .footer_marca {
     grid-area: footer; } }
 
 /*marca.html versión iPhone X*/
@@ -57,22 +57,23 @@
     grid-area: menu; }
   .marcaprincipal {
     grid-area: formulario;
-    position: relative;
-    transform: translateY(-250px);
-    padding-left: 30px; }
+    position: absolute;
+    transform: translate(20px, -250px); }
   .marcaprincipal_video {
-    grid-area: formulario;
     display: none; }
   .row_marca {
     grid-area: tabla;
-    position: absolute; }
-  .container-fluid_marca {
     position: absolute;
-    transform: translate(10px, 20px); }
-  .footer {
+    transform: translate(-5px, 250px);
+    padding-bottom: 10px; }
+  .container-fluid_marca {
+    grid-area: tabla;
+    padding-bottom: 20px;
+    position: absolute; }
+  .footer_marca {
     grid-area: footer;
     position: absolute;
-    padding-top: 450px; } }
+    transform: translate(20px, -200px); } }
 
 /*login.html versión Laptop*/
 @media screen and (min-width: 769px) {
@@ -102,7 +103,7 @@
     grid-area: tabla;
     position: absolute;
     transform: translate(510px, -320px); }
-  .footer {
+  .footer_login {
     grid-area: footer; }
   .usuarioyclave__login--color {
     width: 500px; }
@@ -126,7 +127,7 @@
     margin-left: 10px; }
   .row1 .container-fluid_login {
     grid-area: tabla; }
-  .footer {
+  .footer_login {
     grid-area: footer; }
   .btn-outline-success {
     display: none; }
@@ -152,7 +153,7 @@
     padding-bottom: 40px; }
   .datospersonales__registrate--color {
     width: 250px; }
-  .row1 {
+  .row_login {
     grid-area: tabla;
     position: absolute;
     transform: translate(-20px, -140px); }
@@ -162,16 +163,18 @@
     position: absolute;
     height: 50px;
     width: 250px; }
-  .footer {
-    grid-area: footer; } }
+  .footer_login {
+    grid-area: footer;
+    position: relative;
+    transform: translateY(550px); } }
 
 .contacto__formulario--titulo {
   margin-top: 5px;
   margin-bottom: 5px; }
 
 .contacto__formas--titulo {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 50px;
+  margin-bottom: 5px; }
 
 .contacto__formas--otras {
   margin-bottom: 200px; }
@@ -198,7 +201,7 @@
   .contactogummi_formas {
     grid-area: formulario;
     position: absolute;
-    transform: translate(800px, -252px); }
+    transform: translate(800px, -250px); }
   .row_contacto {
     grid-area: tabla;
     position: absolute;
@@ -252,11 +255,11 @@
     grid-area: formulario;
     position: relative;
     transform: translate(0px, 20px); }
-  .row1 {
+  .row-login {
     grid-area: tabla;
     position: absolute;
     transform: translate(-20px, -140px); }
-  .container-fluid_contacto {
+  .container-fluid_login {
     grid-area: tabla;
     transform: translate(10px, 20px);
     position: absolute;
@@ -278,10 +281,6 @@
     grid-area: menu; }
   .container {
     grid-area: formulario; }
-  .container-fluid_carrito {
-    grid-area: formulario;
-    padding-top: 20px;
-    transform: translate(280px, 0px); }
   .row_carrito {
     grid-area: tabla;
     position: absolute;
@@ -295,11 +294,11 @@
     grid-area: footer;
     padding-top: 40px; } }
 
-/*login.html versión iPad*/
+/*carrito.html versión iPad*/
 @media screen and (max-width: 768px) {
-  .contenedor_login {
-    grid-template-columns: 120px 100px 200px;
-    grid-template-rows: 70px 100px 300px 30px;
+  .contenedor_carrito {
+    grid-template-columns: 200px 100px 200px;
+    grid-template-rows: 200px 100px 300px 30px;
     grid-template-areas: "menu menu menu" "formulario formulario formulario" "tabla tabla tabla" "footer footer footer"; }
   .navbar {
     grid-area: menu; }
@@ -315,24 +314,23 @@
   .btn-outline-success {
     display: none; } }
 
-/*login.html versión iPhone X*/
+/*carrito.html versión iPhone X*/
 @media screen and (max-width: 480px) {
-  .contenedor_login {
+  .contenedor_carrito {
     grid-template-areas: "menu" "formulario" "formulario" "formulario" "formulario" "tabla" "tabla" "footer"; }
-  .navbar-toggler-icon {
+  .navbar {
     grid-area: menu; }
   .container {
     grid-area: formulario; }
-  .row_carrito {
+  .row_login {
     grid-area: tabla;
     position: absolute;
-    transform: translate(-5px, -10px); }
-  .container-fluid_carrrito {
+    transform: translate(-5px, -10px);
+    padding-bottom: 10px; }
+  .container-fluid_login {
     grid-area: tabla;
-    transform: translate(10px, 20px);
-    position: absolute;
-    height: 50px;
-    width: 250px; }
+    padding-bottom: 20px;
+    position: absolute; }
   .footer {
     grid-area: footer; } }
 
@@ -352,7 +350,7 @@ a:active {
   color: black;
   background-color: #ebeae6;
   border-color: black;
-  margin-top: 40px; }
+  margin-top: 10px; }
 
 .btn.btn-outline-success {
   color: black;

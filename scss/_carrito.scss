@@ -20,12 +20,6 @@
     .container{
         grid-area: formulario;
     }
-    
-    .container-fluid_carrito {
-      grid-area: formulario;
-      padding-top: 20px;
-      transform: translate(280px, 0px);
-    }
       
     .row_carrito {
         grid-area: tabla;
@@ -46,13 +40,13 @@
     }
 }    
 
-/*login.html versión iPad*/
+/*carrito.html versión iPad*/
 
 @media screen and  (max-width: 768px)
 {
-.contenedor_login {
-    grid-template-columns: 120px 100px 200px;
-    grid-template-rows: 70px 100px 300px 30px;
+.contenedor_carrito {
+    grid-template-columns: 200px 100px 200px;
+    grid-template-rows: 200px 100px 300px 30px;
     grid-template-areas: 
     "menu menu menu"
     "formulario formulario formulario"
@@ -88,10 +82,10 @@
 }
 
 
-/*login.html versión iPhone X*/
+/*carrito.html versión iPhone X*/
 @media screen and  (max-width: 480px)
 {
-.contenedor_login{
+.contenedor_carrito{
     grid-template-areas: 
     "menu"
     "formulario"
@@ -103,29 +97,26 @@
     "footer";
      }
 
-    .navbar-toggler-icon {
+    .navbar {
         grid-area:menu;
     }
     
     .container{
         grid-area: formulario;
-         }
-    
-       
-    .row_carrito {
+    }
+           
+    .row_login {
         grid-area: tabla;
         position: absolute;
         transform: translate(-5px, -10px);
-        
+        padding-bottom: 10px;
      }
     
-    .container-fluid_carrrito {
+    .container-fluid_login {
         grid-area: tabla;
-        transform: translate(10px, 20px);
+        padding-bottom: 20px;
         position: absolute;
-        height: 50px;
-        width: 250px;
-     }
+    }
 
     .footer {
         grid-area: footer;
