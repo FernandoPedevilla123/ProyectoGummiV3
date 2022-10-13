@@ -134,8 +134,7 @@
 
     .footer_marca {
         grid-area: footer;
-        position: absolute;
-        transform: translate(20px, -200px);
+        position: static;
     }
 
 }

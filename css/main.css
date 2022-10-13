@@ -72,8 +72,7 @@
     position: absolute; }
   .footer_marca {
     grid-area: footer;
-    position: absolute;
-    transform: translate(20px, -200px); } }
+    position: static; } }
 
 /*login.html versión Laptop*/
 @media screen and (min-width: 769px) {
@@ -93,7 +92,7 @@
   .datospersonales {
     grid-area: formulario;
     position: absolute;
-    transform: translate(800px, -210px); }
+    transform: translate(800px, -180px); }
   .row_login {
     grid-area: tabla;
     position: absolute;
